@@ -2,8 +2,11 @@
 Instructions on how to install windows to vhd file
 
 Step 1, Boot your computer using your Bootable Media (DVD or USB media)
+
 Step 2, At the Install screen, press SHIFT+F10 to access the Command Window.
+
 Step 3, Type the following command: 
+
 diskpart.
 list disk.
 select disk 0 (where 0 is the disk number)
