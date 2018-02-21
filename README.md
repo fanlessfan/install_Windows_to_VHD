@@ -16,7 +16,8 @@ Step 3, Run diskpart command and type the following command:
      create partition primary size=40960
      format fs=NTFS quick.
      assign letter=W
-     Then type exit from diskpart
+     
+     Then type exit to completed diskpart
 
 Step 4, Type mkdir w:\vdisk
 
