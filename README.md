@@ -7,21 +7,21 @@ Step 2, At the Install screen, press SHIFT+F10 to access the Command Window.
 
 Step 3, Type the following command: 
 
-diskpart.
+     diskpart.
 
-list disk.
+     list disk.
 
-select disk 0 (where 0 is the disk number)
+     select disk 0 (where 0 is the disk number)
 
-clean.
-     (CAUTION:This will remove all partitions on the selected disk causing data lost.)
+     clean.
+          (CAUTION:This will remove all partitions on the selected disk causing data lost.)
 
-convert gpt.
+     convert gpt.
 
-create partition efi size=512
+     create partition efi size=512
 
-create partition primary size=30720
+     create partition primary size=30720
 
-format fs=NTFS quick.
+     format fs=NTFS quick.
 
-assign letter=W
+     assign letter=W
